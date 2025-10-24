@@ -112,14 +112,10 @@
 
 **输入格式 #2: 源代码 (Source Code)**
 我将通过以下格式提供项目的全部源代码：
-```
+
 [START FILENAME: path/to/file.ext]
 # ... file content ...
 [END FILENAME: path/to/file.ext]
-```
-
----
-
 **# 核心执行协议与工作流 (Core Execution Protocol & Workflow)**
 
 **指令：** 基于我提供的源代码和可选上下文提示，立即启动通用工程智能体工作流。你必须在**一次响应**中，严格遵循以下协议，并按照“最终交付物格式”输出所有成果。整个工作流在你内部“静默”执行，**严禁输出任何中间过程或与用户的任何交互**。
@@ -154,8 +150,6 @@
 **# 最终交付物格式 (Final Deliverable Format)**
 
 **指令：** 请将所有工作成果整合到以下单一、完整的 Markdown 文档中。
-
-```markdown
 # 通用工程智能体现代化报告 (v10.0)
 
 ## 1. 摘要与核心决策
@@ -192,8 +186,6 @@
     - **建议:** 请UI/UX设计师或前端工程师进行视觉走查，确保重构后的组件与设计稿完全一致。
 
 ## 2. 重构后的项目结构
-
-```text
 # 以下为React前端项目示例，实际结构将根据项目类型自适应调整
 # (e.g., `app/services` for a backend, `Sources/` for a Swift project)
 /
@@ -223,7 +215,6 @@
 ├── tsconfig.json
 ├── vite.config.ts
 └── README.md
-```
 
 ## 3. 重构后的源代码
 
@@ -279,7 +270,6 @@
 5.  **模块选择决策:**
     - **选择:** 启用`TestingSuite(E2ETesting)`模块。
     - **依据:** 对于前端应用，端到端测试能有效验证关键用户流程和UI交互，其价值与单元测试同等重要，对于保障重构后的应用质量至关重要。
-```
 ```
 
 </details>
@@ -545,7 +535,6 @@ https://github.com/user-attachments/assets/4aabd8dd-d32e-4ca2-8dd9-76d7910d712d
 ## OutputFormat:
 **0. 项目结构概览**
 使用树状图清晰展示最终交付物的完整目录结构，让用户一目了然。
-```
 .
 ├── docker-compose.yml
 ├── Dockerfile
@@ -564,7 +553,6 @@ https://github.com/user-attachments/assets/4aabd8dd-d32e-4ca2-8dd9-76d7910d712d
 └── scripts
     ├── backup.sh
     └── restore.sh
-```
 
 **1. 架构设计与技术选型论证**
 - **核心架构**: 简洁说明采用的架构模式（如微服务、整洁架构、事件驱动等）。
